@@ -2,10 +2,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Temporal Order</title>
+    <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <div class="app-container">
-
+    <div id="app-container" class="app-container"> <!-- outermost div, this is our flexbox container -->
+      <div class="form-area" id="form-area"> <!-- div for the form -->
+        <div class="form-item"> <!-- subjID -->
+          <input id="subjIDinput" type="text" name="subjIDinput" value="" placeholder="participant ID">
+        </div>
+        <!-- put session id input here inside a div with class "form-item" -->
+        <div class="form-item">
+          <select id="taskType" class="form-item">
+            <option value="">Choose a task</option> <!-- if no task chosen, value will be null -->
+            <option value="to-bilateral">Temporal Order Bilateral</option>
+            <option value="to-central">Temporal Order Central</option>
+            <option value="s-bilateral">Simultaneity Bilateral</option>
+            <option value="s-central">Simultaneity Central</option>
+            <option value="o-bilateral">Orientation</option>
+          </select>
+        </div>
+        <!-- put button here inside a div with class "form-item" -->
+      </div>
     </div>
 
     <script>
