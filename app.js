@@ -27,13 +27,13 @@ function getTaskType() {
 function getButton() {
   button = document.getElementById("form-item").innerHtml = "Continue";
   return getButton;
-}
 
 function hideForm() {
-  var form-area-div = document.getElementById("form-area");
+  var form-area-div = document.getElementById("app-container");
    form-area-div.style.display === "none";
   //  btn.style.display = "block";
 //  } else {
 //    btn.style.display = "none";
 //  }
+}
 }
