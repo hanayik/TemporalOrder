@@ -10,6 +10,7 @@ console.log(taskType);
 //button = getButton();
 //console.log(button);
 form-area = hideForm();
+console.log(form-area);
 
 
 
@@ -33,7 +34,7 @@ function getTaskType() {
 
 function hideForm() {
   var form-area = document.getElementById('form-area');
-  form-area.style.display == "none";
+  form-area.style.display = "none";
   //  btn.style.display = "block";
 //  } else {
 //    btn.style.display = "none";
