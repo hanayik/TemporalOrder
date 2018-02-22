@@ -32,8 +32,7 @@ function getButton() {
   return getButton;
 
 function hideForm() {
-  var form-area-div = document.getElementById("form-area");
-   form-area-div.style.display == "none";
+  document.getElementById("form-area").style.display == "none";
   //  btn.style.display = "block";
 //  } else {
 //    btn.style.display = "none";
