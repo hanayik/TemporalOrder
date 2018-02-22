@@ -10,7 +10,11 @@
         <div class="form-item"> <!-- subjID -->
           <input id="subjIDinput" type="text" name="subjIDinput" value="" placeholder="participant ID">
         </div>
-        <!-- put session id input here inside a div with class "form-item" -->
+        <!-- session id -->
+        <div class="form-item" id="form-item">
+          <input id="sessionID" type="text" name="sessionID" value"" placeholder="session ID">
+        </div>
+        <!-- task drop down -->
         <div class="form-item">
           <select id="taskType" class="form-item">
             <option value="">Choose a task</option> <!-- if no task chosen, value will be null -->
@@ -20,7 +24,10 @@
             <option value="s-central">Simultaneity Central</option>
           </select>
         </div>
-        <!-- put button here inside a div with class "form-item" -->
+        <!-- pushable Continue button -->
+        <div class="form-item" id="form-item">
+          <button type="button">Continue</button>
+        </div>
       </div>
     </div>
 

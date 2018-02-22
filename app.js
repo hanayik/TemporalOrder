@@ -3,8 +3,34 @@
 // All of the Node.js APIs are available in this process.
 subjID = getSubjID()
 console.log(subjID)
+sessionID = getSessionID()
+taskType = getTaskType()
+button = getButton()
+btn = button()
 
 function getSubjID () {
-  subjID = document.getElementById("subjIDinput").value
-  return subjID
+  subjID = document.getElementById("subjIDinput").value;
+  return subjID;
+}
+
+function getSessionID() {
+  sessionID = document.getElementById("sessionID").value;
+  return sessionID;
+}
+function getTaskType() {
+  taskType = document.getElementById("taskType").value;
+  return taskType;
+}
+function getButton() {
+  button = document.getElementById("form-item").innerHtml = "Continue";
+  return getButton;
+}
+
+function button() {
+  btn = document.getElementById("form-item");
+  if (btn.style.display === "none") {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
 }
