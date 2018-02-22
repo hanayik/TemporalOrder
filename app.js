@@ -7,10 +7,10 @@ sessionID = getSessionID();
 console.log(sessionID);
 taskType = getTaskType();
 console.log(taskType);
-button = getButton();
-console.log(button);
-form-area-div = hideForm();
-console.log(form-area-div);
+//button = getButton();
+//console.log(button);
+form-area = hideForm();
+
 
 
 
@@ -27,9 +27,9 @@ function getTaskType() {
   taskType = document.getElementById("taskType").value;
   return taskType;
 }
-function getButton() {
-  button = document.getElementById("form-area").innerHtml = "Continue";
-  return getButton;
+//function getButton() {
+//  button = document.getElementById("form-area").innerHtml = "Continue";
+//  return getButton;
 
 function hideForm() {
   document.getElementById("form-area").style.display == "none";
@@ -37,5 +37,4 @@ function hideForm() {
 //  } else {
 //    btn.style.display = "none";
 //  }
-}
 }
