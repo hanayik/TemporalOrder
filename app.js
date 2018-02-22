@@ -4,8 +4,11 @@
 subjID = getSubjID()
 console.log(subjID)
 sessionID = getSessionID()
+console.log(sessionID)
 taskType = getTaskType()
+console.log(taskType)
 button = getButton()
+console.log(button)
 btn = button()
 
 function getSubjID () {
