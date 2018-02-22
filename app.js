@@ -9,7 +9,7 @@ taskType = getTaskType()
 console.log(taskType)
 button = getButton()
 console.log(button)
-btn = button()
+
 
 function getSubjID () {
   subjID = document.getElementById("subjIDinput").value;
@@ -29,11 +29,11 @@ function getButton() {
   return getButton;
 }
 
-function button() {
-  btn = document.getElementById("form-item");
-  if (btn.style.display === "none") {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
+function hideForm() {
+  var form-area-div = document.getElementById("form-area");
+   form-area-div.style.display === "none";
+  //  btn.style.display = "block";
+//  } else {
+//    btn.style.display = "none";
+//  }
 }
