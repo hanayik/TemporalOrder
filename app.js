@@ -32,7 +32,8 @@ function getTaskType() {
 //  return getButton;
 
 function hideForm() {
-  document.getElementById("form-area").style.display == "none";
+  var form-area = document.getElementById('form-area');
+  form-area.style.display == "none";
   //  btn.style.display = "block";
 //  } else {
 //    btn.style.display = "none";
