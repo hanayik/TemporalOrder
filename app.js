@@ -7,8 +7,6 @@ sessionID = getSessionID();
 console.log(sessionID);
 taskType = getTaskType();
 console.log(taskType);
-//button = getButton();
-//console.log(button);
 form-area = hideForm();
 console.log(form-area);
 
@@ -33,9 +31,16 @@ function getTaskType() {
 //  return getButton;
 
 function hideForm() {
-  var form-area = document.getElementById('form-area');
-  form-area.style.display = "none";
-  //  btn.style.display = "block";
+ var form-area = document.getElementById("form-area");
+  //var button = document.getElementById("")
+  if(document.getElementById('form-area').onclick {
+    document.getElementById('form-area').style.display='none';
+  } else {
+    document.getElementById('form-area').style.display='block';
+  }
+  return form-area;
+
+  //  btn.style.display = "block";S
 //  } else {
 //    btn.style.display = "none";
 //  }
