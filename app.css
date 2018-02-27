@@ -41,3 +41,13 @@ input[type=text], select {
     border:none;
     font-size:18px;
 }
+
+.instructions-area {
+  width: 70%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}

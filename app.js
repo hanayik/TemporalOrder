@@ -1,13 +1,15 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+// declare consts
+const toBilateralText = 'This is the TO bilatertal'
+const toCentralText = 'This is the TO central'
+const sBilateralText = 'This is the S bilatertal'
+const sCentralText = 'This is the S bilatertal'
+const appContainer = document.getElementById('app-container')
+
 
 contBtn = document.getElementById('continueButton')
 contBtn.onclick = function () {
   hideForm()
-  getTaskTypeID()
 }
-
 
 
 function getSubjID () {
@@ -19,26 +21,37 @@ function getSessionID() {
   sessionID = document.getElementById("sessionID").value;
   return sessionID;
 }
+
 function getTaskType() {
   taskType = document.getElementById("taskType").value;
   return taskType;
 }
 
-function getTaskTypeID() {
-  taskID = document.getElementById)("taskType").value;
-  return taskID;
-
-  var taskID = document.getElementById('taskType').text;
-  document.getElementById("taskType").innerHTML = taskID;
-
-  if (value == 'to-bilateral') {
-    return taskID.options[taskID.selectedIndex].text;
+function getInstructions() {
+  var text
+  taskID = getTaskType()
+  if (taskID === 'to-bilateral') {
+    text = toBilateralText
+  } else if (taskID === 'to-central') {
+    text = toCentralText
+  } else if (taskID === 's-bilateral') {
+    text = sBilateralText
+  } else if (taskID === 's-central') {
+    text = sCentralText
   }
-  var text = getTaskTypeID('welcome to temp order bilateral')
+  return text
+} // end getInstructions
+
+function showInstructions (el) {
+  el.innerHTML = getInstructions()
 }
-//function getButton() {
-//  button = document.getElementById("form-area").innerHtml = "Continue";
-//  return getButton;
+
+function makeInstructionDiv(){
+  instrDiv = document.createElement('div')
+  instrDiv.className = 'instructions-area'
+  appContainer.append(instrDiv)
+  showInstructions(instrDiv)
+}
 
 function hideForm() {
   var formArea = document.getElementById("form-area")
@@ -49,5 +62,5 @@ function hideForm() {
   console.log(sessionID)
   var taskType = getTaskType()
   console.log(taskType)
-  return 1
+  makeInstructionDiv()
 }
